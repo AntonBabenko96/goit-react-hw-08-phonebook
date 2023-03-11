@@ -1,0 +1,12 @@
+.formGroup {
+display: grid;
+grid-template-columns: 120px 1fr;
+gap: 10px;
+margin-bottom: 15px;
+align-items: center;
+}
+.field {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
