@@ -4,12 +4,16 @@ import instance from 'shared/api/auth';
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchAll',
   async (_, thunkAPI) => {
-    try {
-      const response = await instance.get('/contacts');
-      return response.data;
-    } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
-    }
+    return new Promise((resolve, reject) => {
+      setTimeout(async () => {
+        try {
+          const response = await instance.get('/contacts');
+          resolve(response.data);
+        } catch (e) {
+          reject(thunkAPI.rejectWithValue(e.message));
+        }
+      }, 1000);
+    });
   }
 );
 
