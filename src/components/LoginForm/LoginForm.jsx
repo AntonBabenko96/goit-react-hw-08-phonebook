@@ -3,6 +3,7 @@ import { initialState } from './initialState';
 import { TextField } from 'shared/components/TextField/TextField';
 import { fields } from '../RegisterForm/fields.js';
 import { Button } from '../../shared/components/Button/Button';
+import PropTypes from 'prop-types';
 import css from '../LoginForm/LoginForm.module.css';
 
 export const LoginForm = ({ onSubmit }) => {
@@ -24,4 +25,8 @@ export const LoginForm = ({ onSubmit }) => {
       </form>
     </div>
   );
+};
+
+LoginForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
