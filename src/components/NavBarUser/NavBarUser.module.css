@@ -1,0 +1,44 @@
+.link {
+    display: flex;
+    text-decoration: none;
+align-items: center;
+justify-content: baseline; 
+color: black;
+border: 1px solid black;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+
+.link:hover {
+    border-color: rgb(5, 88, 49);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+   
+
+}
+
+.navBarUser {
+    display: flex;
+    gap: 10px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.logout {
+    background-color: #bbbbbb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+.logout:hover {
+    color: red;
+    border-color: red;
+
+}

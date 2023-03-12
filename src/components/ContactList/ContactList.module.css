@@ -1,4 +1,23 @@
 .item {
-    margin-top: 10px;
-    margin-right: 10px;
+ margin-top: 10px;
+ display: flex;
+}
+
+.btn {
+    background-color: #fff;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 3px;
+        cursor: pointer;
+        width: 60px;
+        margin-left: auto;
+}
+
+.btn:hover {
+    color: red;
+    border-color: red;
+}
+
+.contacts {
+  padding-left: 0;
 }

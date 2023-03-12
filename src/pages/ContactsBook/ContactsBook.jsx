@@ -17,7 +17,7 @@ export const ContactsBook = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={css.contactsBook}>
       {isLoading && <Loader />}
       <Box title="Phonebook">
         <ContactForm />

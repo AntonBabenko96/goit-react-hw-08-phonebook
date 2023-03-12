@@ -35,6 +35,7 @@ export const ContactForm = () => {
       <label className={css.name}>
         Name
         <input
+          className={css.input}
           value={name}
           type="text"
           name="name"
@@ -48,6 +49,7 @@ export const ContactForm = () => {
       <label className={css.number}>
         Number
         <input
+          className={css.input}
           value={number}
           type="tel"
           name="number"
@@ -57,7 +59,9 @@ export const ContactForm = () => {
           onChange={handleChange}
         />
       </label>
-      <button type="submit">Add contact</button>
+      <button type="submit" className={css.btn}>
+        Add contact
+      </button>
     </form>
   );
 };

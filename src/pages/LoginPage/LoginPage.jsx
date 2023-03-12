@@ -2,6 +2,7 @@ import { LoginForm } from '../../components/LoginForm/LoginForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from 'redux/auth/auth-operations';
 import { Navigate } from 'react-router-dom';
+import css from '../LoginPage/LoginPage.module.css';
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ export const LoginPage = () => {
   };
   if (!isLogin) {
     return (
-      <div>
+      <div className={css.login}>
         <LoginForm onSubmit={onLogin} />
       </div>
     );

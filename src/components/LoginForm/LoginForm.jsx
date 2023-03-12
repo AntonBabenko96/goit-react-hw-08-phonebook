@@ -12,14 +12,16 @@ export const LoginForm = ({ onSubmit }) => {
   });
   const { email, password } = state;
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
-      <TextField value={email} onChange={handleChange} {...fields.email} />
-      <TextField
-        value={password}
-        onChange={handleChange}
-        {...fields.password}
-      />
-      <Button>Login</Button>
-    </form>
+    <div>
+      <form className={css.form} onSubmit={handleSubmit}>
+        <TextField value={email} onChange={handleChange} {...fields.email} />
+        <TextField
+          value={password}
+          onChange={handleChange}
+          {...fields.password}
+        />
+        <Button className={css.loginBtn}>Login</Button>
+      </form>
+    </div>
   );
 };

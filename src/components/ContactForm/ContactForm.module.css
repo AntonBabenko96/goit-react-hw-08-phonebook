@@ -19,3 +19,20 @@
     flex-direction: column;
     margin-bottom: 20px;
 }
+
+input {
+    outline-color: rgb(5, 88, 49);
+}
+
+.btn {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(5, 88, 49);
+    border-color: rgb(5, 88, 49);
+}

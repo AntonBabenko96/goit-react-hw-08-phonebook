@@ -15,7 +15,11 @@ export const ContactList = () => {
   const elements = result.map(({ id, name, number }) => (
     <li key={id} className={css.item}>
       {name}: {number}
-      <button type="button" onClick={() => dispatch(deleteContact(id))}>
+      <button
+        type="button"
+        onClick={() => dispatch(deleteContact(id))}
+        className={css.btn}
+      >
         delete
       </button>
     </li>
